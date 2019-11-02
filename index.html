@@ -1,0 +1,108 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>DBDRAGON</title>
+    <script>
+    function capturar()
+    {
+        // obtenemos e valor por el numero de elemento
+        var porNumeroDeAvatar=document.getElementById("numero_de_avatar").value;
+        // Obtenemos el valor por el id
+        var porId=document.getElementById("id_de_avatar").value;
+
+        var porTipo=document.getElementById("tipo").value;
+        var porGenero=document.getElementById("genero").value;
+        var porImagen=document.getElementById("nombre").value;
+        var porNombre=document.getElementById("nombre2").value;
+        var porMinRank=document.getElementById("porMinRank").value;
+        
+        var note=document.getElementById("note").value;
+var gold_week=document.getElementById("gold_week").value;
+var gold_month=document.getElementById("gold_month").value;
+var gold_perm=document.getElementById("gold_perm").value;
+var cash_week=document.getElementById("cash_week").value;
+var cash_month=document.getElementById("cash_month").value;
+var cash_perm=document.getElementById("cash_perm").value;
+var ESTRELLA=document.getElementById("ESTRELLA").value;
+var TIEMPO=document.getElementById("TIEMPO").value;
+var ATAQUE=document.getElementById("ATAQUE").value;
+var DEFENSA=document.getElementById("DEFENSA").value;
+var VIDA=document.getElementById("VIDA").value;
+var ITEM=document.getElementById("ITEM").value;
+var TIME2=document.getElementById("TIME2").value;
+var TIME3=document.getElementById("TIME3").value;
+var CODIGO=document.getElementById("CODIGO").value;
+ 
+        document.getElementById('resultado').innerHTML=' \
+            ['+porNumeroDeAvatar+' \
+            ,'+porId+' \
+            ,'+porTipo+' \
+            ,'+porGenero+' \
+            ,"'+porImagen+'","'+porNombre+'", {<br>"min_rank":'+porMinRank+',<br>"note":'+note+',<br>"gold_week":'+gold_week+',<br>"gold_month":'+gold_month+',<br>"gold_perm":'+gold_perm+',<br>"cash_week":'+cash_week+',<br>"cash_month":'+cash_month+',<br>"cash_perm":'+cash_perm+',<br>"stat_pop":'+ESTRELLA+',<br>"stat_time":'+TIEMPO+',<br>"stat_atk":'+ATAQUE+',<br>"stat_def":'+DEFENSA+',<br>"stat_life":'+VIDA+',<br>"stat_item":'+ITEM+',<br>"stat_dig":'+TIME2+',<br>"stat_shld":'+TIME3+',<br>"remove_time":0,<br>}'+CODIGO+']';
+    }
+    </script>
+ 
+    <style>
+        form   {width:900px;border:1px solid #ccc;padding:10px;}
+    </style>
+</head>
+ 
+<body>
+    <form id="form1">
+        ID:<br><input type="text" name="numero_de_avatar" value="0" id="numero_de_avatar" class="formulario"> - ID MAS ALTO
+
+        <br>NUMBER II:<br><input type="text" name="id_de_avatar" value="0" id="id_de_avatar" class="formulario"> - número de imagen mb0001 = 1
+
+        <br>TYPE:<br><input type="text" name="tipo" value="" id="tipo" class="formulario">0=head - 1=body - 2=glass - 3=flag - 4=background - 5=foreground
+
+        <br>GENDER:<br><input type="text" name="genero" value="" id="genero" class="formulario">0=hombre - 1=mujer - 2=hombre&mujer
+
+        <br>NAME OF IMG:<br><input type="text" name="nombre" value="" id="nombre" class="formulario"> el nombre de la imagen de tu avatar - ojo: no incluir .png solo el nombre
+
+        <br>NAME OF AVATAR:<br><input type="text" name="nombre2" value="" id="nombre2" class="formulario">nombre de tu avatar
+        <br>MIN RANK:<br><input type="text" name="porMinRank" value="0" id="porMinRank" class="formulario">solo introducir numeros 1-31 / no se aceptan caracteres a excepción del codigo de movimiento.
+
+
+
+
+
+
+
+        <br>note:<br><input type="text" name="note" value="0" id="note" class="formulario">0=nada - 1=new - 2=on sale
+        <br>gold_week:<br><input type="text" name="gold_week" value="0" id="gold_week" class="formulario">
+        <br>gold_month:<br><input type="text" name="gold_month" value="0" id="gold_month" class="formulario">
+        <br>gold_perm:<br><input type="text" name="gold_perm" value="0" id="gold_perm" class="formulario">
+        <br>cash_week:<br><input type="text" name="cash_week" value="0" id="cash_week" class="formulario">
+        <br>cash_month:<br><input type="text" name="cash_month" value="0" id="cash_month" class="formulario">
+        <br>cash_perm:<br><input type="text" name="cash_perm" value="0" id="cash_perm" class="formulario">
+        <br><img src="https://image.prntscr.com/image/Avx9c3pbS4OoRLeWX9wooA.png"><input style="
+    width: 50px;
+" type="text" name="ESTRELLA" value="" id="ESTRELLA" class="formulario"><img src="https://image.prntscr.com/image/0xsA3CMLTf_HiRu3x730Yw.png"><input style="
+    width: 50px;
+" type="text" name="TIEMPO" value="" id="TIEMPO" class="formulario"><img src="https://image.prntscr.com/image/g2v3W1kRTeKTOrH_lrH-5A.png"><input style="
+    width: 50px;
+" type="text" name="ATAQUE" value="" id="ATAQUE" class="formulario"><img src="https://image.prntscr.com/image/bfA3kMGETOG9R70V2pZY8A.png"><input style="
+    width: 50px;
+" type="text" name="DEFENSA" value="" id="DEFENSA" class="formulario">
+<br><img src="https://image.prntscr.com/image/ywrJIZHlQFSFXOV1_87KSg.png"><input style="
+    width: 50px;
+" type="text" name="VIDA" value="" id="VIDA" class="formulario"><img src="https://image.prntscr.com/image/WrfIkAUJQ6iYPbQE2oG68A.png"><input style="
+    width: 50px;
+" type="text" name="ITEM" value="" id="ITEM" class="formulario"><img src="https://image.prntscr.com/image/Rr7T--sXT5GFIk3V23obDQ.png"><input style="
+    width: 50px;
+" type="text" name="TIME2" value="" id="TIME2" class="formulario"><img src="https://image.prntscr.com/image/oC3fxiw_Qt_erFEKOnoNIQ.png"><input style="
+    width: 50px;
+" type="text" name="TIME3" value="" id="TIME3" class="formulario">
+        <br>CODIGO DE MOVIMIENTO:<br><input type="text" name="CODIGO" value="" id="CODIGO" class="formulario">
+
+ 
+ 
+       
+    </form>
+    <input type="button" value="Obtener Arrays" onclick="capturar()">
+    <div id="resultado" style="
+    background: rgba(25, 231, 28, 0.7);
+"> </div>
+ 
+    <b>Softplay Games - © copyright lnferno programming / Developer: Alexander Alama</b>
+
+</body></html>
